@@ -1,13 +1,23 @@
 
 import './App.css'
 
+
+
+
+
+
+
 function App() {
+
+
+
+
 
 
   return (
     <>
       <div className="hero">
-        <img src="/public/bappa3.jpg" alt=""  width= "400px" className="hero-image" />
+        <img src="https://res.cloudinary.com/mudemoenv/image/upload/v1724353017/m2m1lncn3sahseleckch.jpg" alt=""  width= "400px" className="hero-image" />
         <div className="hero-content">
     <h1 >Hostelcha <b>Raja</b></h1>
     <hr />
