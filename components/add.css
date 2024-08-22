@@ -1,0 +1,25 @@
+.box{
+    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.box2{
+    background-color: orange;
+    padding: 3rem;
+    gap: 1rem;
+}
+button{
+    margin-left: 1rem;
+}
+
+li{
+    background-color: chocolate;
+    border: 2px solid black;
+    margin: 1rem;
+}
+
