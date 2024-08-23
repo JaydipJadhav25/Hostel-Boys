@@ -9,9 +9,9 @@ const Home = () => {
 <h1 >Hostelcha <b>Raja</b></h1>
 <hr />
 <p>Celebrating Ganpati with my hostel family—because home is where the heart is, and our hearts are with Bappa!</p>
-<button className="btn" ><Link to="/add">ADD</Link></button>
+<Link to="/add"><button className="btn" >ADD</button></Link>
 
-<button className="btn"><Link to="/get">GET</Link></button>
+<Link to="/get"><button className="btn">GET</button></Link>
 
 </div>
 

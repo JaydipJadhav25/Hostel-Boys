@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./add.css"
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {addData} from "../src/store/data"
 import { useDispatch } from "react-redux";
 
@@ -39,10 +39,13 @@ export const Addtransaction = () => {
 
   return (
 
-    <div className="box">
+<div className="box">
 
 
 <div className="box2">
+
+  <h1>Add Transaction </h1>
+
 <form  onSubmit={handleSubmit(submitForm)}>
 
 <label htmlFor="name">Title : </label>
@@ -59,6 +62,8 @@ export const Addtransaction = () => {
     
   </div>    
 
+
+  <Link to="/"><button>Home</button></Link>
 
     </div>
   )

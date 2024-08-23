@@ -16,17 +16,32 @@ useEffect(() =>{
 
   dispatch(getData());
 
+
 },[])
 
 if(loading) {
   return<h1>Loading............</h1>
 }
 
-console.log(allTransications);
+let total = 0;
+
+if(allTransications){
+  allTransications.map((e) =>{
+        total +=e.price
+  })
+}
+
+console.log(total);
+
+
+//total 
+
+
+
 
   return (
     <div className="box2">
-     <h1>Total Transaction : { allTransications && allTransications.length}</h1>
+     <h1>Transactions : { allTransications && allTransications.length}</h1>
       <ol>
       {
 
@@ -34,7 +49,9 @@ console.log(allTransications);
     
 
         <li key={ele.id}>
-          <h4>{ele.name} :: {ele.price}</h4>
+          <h4>{ele.name}     ::    <b>{ele.price}</b></h4>
+          
+         
         </li>
         
       
@@ -43,8 +60,9 @@ console.log(allTransications);
         }
       </ol>
    
-
-      <button className="btn"><Link to="/">Back</Link></button>
+ 
+      <h2>Total Amount : <b>{total}</b></h2>
+      <Link to="/"> <button className="btn">Back</button></Link>
     </div>
   )
 }
